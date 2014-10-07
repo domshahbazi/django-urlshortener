@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Shabba URL Shortener </title>
+	{% load staticfiles %}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="{% static 'shorturl/js/create.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'shorturl/css/index.css' %}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row" id="mainBlock">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+			<p class="text-center" id="tagline">You're <span style="color:blue">Smaller</span> URL Is Ready.</p> 
+	
+            <div class="alert alert-info text-center" id="shortURL" role="alert"> <strong>Shortened URL:</strong> {{ shortened_url }}</div>
+			
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+</body>
+
+</html>
